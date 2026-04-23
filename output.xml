@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-04-23T04:34:39.138366" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\HP\Documents\RobotFramework\tests">
+<suite id="s1-s1" name="AllKeywords" source="C:\Users\HP\Documents\RobotFramework\tests\AllKeywords.robot">
+<test id="s1-s1-t1" name="Master Selenium Keyword Demo" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:39.586585" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-23T04:34:39.586146" elapsed="13.565707"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-23T04:34:53.153329" elapsed="0.057494"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-04-23T04:34:53.211338" elapsed="0.000443"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:53.213203" level="INFO">Selecting checkbox 'xpath=(//input[@type='checkbox'])[1]'.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:34:53.212282" elapsed="1.322756"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:54.538351" level="INFO">Verifying checkbox 'xpath=(//input[@type='checkbox'])[1]' is selected.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-04-23T04:34:54.536955" elapsed="0.922247"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:55.460638" level="INFO">Unselecting checkbox 'xpath=(//input[@type='checkbox'])[1]'.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:34:55.459968" elapsed="1.194366"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:56.657161" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>${LOGIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-23T04:34:56.655967" elapsed="1.672625"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:58.333248" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:34:58.330675" elapsed="0.882976"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:34:59.218990" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-23T04:34:59.783632" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:34:59.218382" elapsed="0.878415"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:00.549180" level="INFO">Element 'css:button[type="submit"]' is displayed.</msg>
+<arg>css:button[type="submit"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-23T04:35:00.097710" elapsed="0.451705"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:00.550376" level="INFO">Verifying element 'tag:h2' contains exact text 'Login Page'.</msg>
+<arg>tag:h2</arg>
+<arg>Login Page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-23T04:35:00.549896" elapsed="0.451303"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:01.443284" level="INFO">Current page contains text 'This is where you can log into the secure area'.</msg>
+<arg>This is where you can log into the secure area</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-23T04:35:01.001832" elapsed="0.441717"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:01.445983" level="INFO">Clicking button 'class:radius'.</msg>
+<arg>class:radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:01.445222" elapsed="1.868152"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-23T04:35:03.314111" elapsed="0.231814"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:03.548296" level="INFO">Simulating Mouse Over on element 'id=page-footer'.</msg>
+<arg>id=page-footer</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:03.547256" elapsed="0.746822"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:04.296668" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-23T04:35:04.295238" elapsed="0.216277"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-23T04:35:04.516220" level="INFO">Test reached final validation stage.</msg>
+<arg>Test reached final validation stage.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-23T04:35:04.513243" elapsed="0.003534"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Capturing final screenshot...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-23T04:35:04.521161" elapsed="0.003447"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:04.891359" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="master_test_result.png"&gt;&lt;img src="master_test_result.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>master_test_result.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-04-23T04:35:04.528215" elapsed="0.363453"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-23T04:35:04.892806" elapsed="2.784850"/>
+</kw>
+<doc>Covers Navigation, Forms, Assertions, and Browser Control.</doc>
+<status status="PASS" start="2026-04-23T04:34:39.584134" elapsed="28.094687"/>
+</test>
+<doc>A master suite covering major SeleniumLibrary keyword categories.</doc>
+<status status="PASS" start="2026-04-23T04:34:39.209534" elapsed="28.474571"/>
+</suite>
+<suite id="s1-s2" name="Keywords" source="C:\Users\HP\Documents\RobotFramework\tests\Keywords.robot">
+<test id="s1-s2-t1" name="Comprehensive Selenium Interaction Test" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:07.720450" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-23T04:35:07.717270" elapsed="11.225774"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-23T04:35:18.945018" elapsed="0.343537"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:19.824871" level="INFO">Element 'id=username' is displayed.</msg>
+<arg>id=username</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-23T04:35:19.290175" elapsed="0.535662"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified: Username field is visible.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-23T04:35:19.829465" elapsed="0.004196"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:19.843391" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:19.840814" elapsed="0.868521"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:20.724945" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-23T04:35:21.325487" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:20.718163" elapsed="0.988910"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>css=button[type='submit']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-04-23T04:35:21.708838" elapsed="0.767037"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified: Login button is enabled.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-23T04:35:22.478015" elapsed="0.003199"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:22.486598" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<arg>css=button[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:22.483441" elapsed="1.912077"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-23T04:35:24.399149" elapsed="0.235891"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:24.636292" level="INFO">Clicking link 'link=Elemental Selenium'.</msg>
+<arg>link=Elemental Selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:24.635934" elapsed="0.735802"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:25.372976" elapsed="0.611976"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:25.986306" level="INFO">Clicking element 'css=.flash.success'.</msg>
+<arg>css=.flash.success</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-23T04:35:25.985727" elapsed="0.525514"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:26.860525" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="final_state.png"&gt;&lt;img src="final_state.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>final_state.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-04-23T04:35:26.512252" elapsed="0.348651"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-23T04:35:26.862244" level="INFO">Test completed successfully. Screenshot saved.</msg>
+<arg>Test completed successfully. Screenshot saved.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-23T04:35:26.861574" elapsed="0.000812"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-23T04:35:26.863098" elapsed="2.562119"/>
+</kw>
+<doc>Execution of common Selenium actions in a single flow.</doc>
+<status status="PASS" start="2026-04-23T04:35:07.711066" elapsed="21.715498"/>
+</test>
+<doc>A test suite covering essential SeleniumLibrary keywords.</doc>
+<status status="PASS" start="2026-04-23T04:35:07.692197" elapsed="21.738878"/>
+</suite>
+<suite id="s1-s3" name="MaximizeWindow" source="C:\Users\HP\Documents\RobotFramework\tests\MaximizeWindow.robot">
+<test id="s1-s3-t1" name="Browser And Logging Demo" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:29.442066" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-23T04:35:29.441534" elapsed="2.932349"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.374390" elapsed="0.268454"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-23T04:35:32.652051" level="INFO">This message will appear in the HTML log file.</msg>
+<arg>This message will appear in the HTML log file.</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.644968" elapsed="0.008302"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This message is visible in the terminal during execution.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.655797" elapsed="0.005001"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-23T04:35:32.976188" level="INFO">Current page contains element 'name=q'.</msg>
+<arg>name=q</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.675914" elapsed="0.300766"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-23T04:35:32.985686" level="INFO">Verified search bar is present.</msg>
+<arg>Verified search bar is present.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.981337" elapsed="0.005091"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-23T04:35:32.993889" elapsed="2.606676"/>
+</kw>
+<status status="PASS" start="2026-04-23T04:35:29.439646" elapsed="6.162122"/>
+</test>
+<status status="PASS" start="2026-04-23T04:35:29.433606" elapsed="6.170845"/>
+</suite>
+<status status="PASS" start="2026-04-23T04:34:39.140922" elapsed="56.465179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
+<stat name="AllKeywords" id="s1-s1" pass="1" fail="0" skip="0">Tests.AllKeywords</stat>
+<stat name="Keywords" id="s1-s2" pass="1" fail="0" skip="0">Tests.Keywords</stat>
+<stat name="MaximizeWindow" id="s1-s3" pass="1" fail="0" skip="0">Tests.MaximizeWindow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
