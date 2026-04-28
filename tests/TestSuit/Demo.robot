@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary 
+
 Library    ../libraries/utils.py
 Resource   ../resources/keywords.robot
 

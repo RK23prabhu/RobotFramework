@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library  SeleniumLibrary 
+
 
 *** Variables ***
 ${URL}           https://the-internet.herokuapp.com/dropdown

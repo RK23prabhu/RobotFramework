@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    A test suite covering essential SeleniumLibrary keywords.
-Library         SeleniumLibrary
+Library    SeleniumLibrary 
 
 *** Variables ***
 ${URL}          https://the-internet.herokuapp.com/login
@@ -44,6 +44,6 @@ Comprehensive Selenium Interaction Test
     
     # 9. Capture Page Screenshot
     Capture Page Screenshot    final_state.png
-    Log                       Test completed successfully. Screenshot saved.
+    Log Test completed successfully. Screenshot saved.
 
     [Teardown]    Close Browser

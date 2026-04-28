@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation     A master suite covering major SeleniumLibrary keyword categories.
-Library           SeleniumLibrary
+Library    SeleniumLibrary 
 
 *** Variables ***
 ${URL}            https://the-internet.herokuapp.com/checkboxes

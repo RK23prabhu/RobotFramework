@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary 
 
 *** Variables ***
 ${URL_DROPDOWN}    https://the-internet.herokuapp.com/dropdown
@@ -26,11 +26,13 @@ Execute Selenium Advanced Elements
 
     # 4. Get Value (Retrieve input field value)
     Input Text    name:q    Robot Framework
+
     ${search_val}    Get Value    name:q
     Log To Console    Input value is: ${search_val}
 
     # 5. Get Element Attribute (Retrieve the 'name' attribute)
     ${attr}    Get Element Attribute    name:q    type
+
     Log To Console    Attribute type is: ${attr}
 
     # 6. Page Should Contain
@@ -70,7 +72,7 @@ Handle Frames and Windows
     Switch Window    title:Bing
     Log To Console    Switched to Bing
     
-    # 4. Close Window (Closes current active window)
+    qac # 4. Close Window (Closes current active window)
     Close Window
     
     # Switch back to original

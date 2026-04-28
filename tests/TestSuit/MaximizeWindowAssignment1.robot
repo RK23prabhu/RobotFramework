@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary 
 
 *** Variables ***
 ${URL}           https://www.google.com

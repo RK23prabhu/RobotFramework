@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-04-28T06:55:54.296179" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\HP\Documents\RobotFramework\tests">
+<suite id="s1-s1" name="TestSuit" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit">
+<suite id="s1-s1-s1" name="Assignment1" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment1.robot">
+<test id="s1-s1-s1-t1" name="Comprehensive Selenium Interaction Test" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:55:55.035961" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:55:55.035480" elapsed="8.452879"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:56:03.495505" elapsed="0.112858"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:03.870145" level="INFO">Element 'id=username' is displayed.</msg>
+<arg>id=username</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T06:56:03.612621" elapsed="0.257795"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified: Username field is visible.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:56:03.871106" elapsed="0.000950"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:03.873611" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:03.872903" elapsed="0.300063"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:04.174420" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-28T06:56:04.293390" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:04.173722" elapsed="0.338065"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>css=button[type='submit']</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-04-28T06:56:04.512541" elapsed="0.083097"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Verified: Login button is enabled.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:56:04.596193" elapsed="0.008447"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:04.605928" level="INFO">Clicking button 'css=button[type='submit']'.</msg>
+<arg>css=button[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:04.605341" elapsed="1.017483"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-28T06:56:05.625151" elapsed="0.037600"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:05.667591" level="INFO">Clicking link 'link=Elemental Selenium'.</msg>
+<arg>link=Elemental Selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:05.665626" elapsed="0.275585"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:05.941872" elapsed="0.052412"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:05.996156" level="INFO">Clicking element 'css=.flash.success'.</msg>
+<arg>css=.flash.success</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:05.995597" elapsed="0.123479"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:06.386087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="final_state.png"&gt;&lt;img src="final_state.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>final_state.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-04-28T06:56:06.119711" elapsed="0.266713"/>
+</kw>
+<kw name="Log Test completed successfully. Screenshot saved.">
+<msg time="2026-04-28T06:56:06.399303" level="FAIL">No keyword with name 'Log Test completed successfully. Screenshot saved.' found.</msg>
+<status status="FAIL" start="2026-04-28T06:56:06.399099" elapsed="0.000395">No keyword with name 'Log Test completed successfully. Screenshot saved.' found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:56:06.400694" elapsed="2.422812"/>
+</kw>
+<doc>Execution of common Selenium actions in a single flow.</doc>
+<status status="FAIL" start="2026-04-28T06:55:55.033766" elapsed="13.791008">No keyword with name 'Log Test completed successfully. Screenshot saved.' found.</status>
+</test>
+<doc>A test suite covering essential SeleniumLibrary keywords.</doc>
+<status status="FAIL" start="2026-04-28T06:55:54.376656" elapsed="14.453235"/>
+</suite>
+<suite id="s1-s1-s2" name="Assignment2" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment2.robot">
+<test id="s1-s1-s2-t1" name="Validate Login Page UI" line="12">
+<status status="FAIL" start="2026-04-28T06:56:08.866113" elapsed="0.004305">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t2" name="[Tags] smoke ui" line="13">
+<status status="FAIL" start="2026-04-28T06:56:08.875411" elapsed="0.015333">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t3" name="Validate Login Page Elements" line="14">
+<status status="FAIL" start="2026-04-28T06:56:08.902562" elapsed="0.003874">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t4" name="Login And Validate Dashboard" line="16">
+<status status="FAIL" start="2026-04-28T06:56:08.911335" elapsed="0.004947">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t5" name="[Tags] regression" line="17">
+<status status="FAIL" start="2026-04-28T06:56:08.930863" elapsed="0.006226">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t6" name="Validate Login Page Elements" line="18">
+<status status="FAIL" start="2026-04-28T06:56:08.942481" elapsed="0.007831">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t7" name="Login With Valid Credentials" line="19">
+<status status="FAIL" start="2026-04-28T06:56:08.953256" elapsed="0.007459">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s2-t8" name="Validate Successful Login" line="20">
+<status status="FAIL" start="2026-04-28T06:56:08.963479" elapsed="0.002292">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-04-28T06:56:08.838461" elapsed="0.133150"/>
+</suite>
+<suite id="s1-s1-s3" name="Assignment3" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment3.robot">
+<test id="s1-s1-s3-t1" name="Handle Dropdown Menu Options" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:08.987004" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/dropdown'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:56:08.985876" elapsed="6.090608"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:56:15.077052" elapsed="0.065724"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.5 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-04-28T06:56:15.143305" elapsed="0.000427"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:15.144720" level="INFO">Selecting options from selection list 'id:dropdown' by index 1.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2026-04-28T06:56:15.144199" elapsed="5.408893"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:20.556407" level="INFO">Verifying list 'id:dropdown' has option [ Option 1 ] selected.</msg>
+<msg time="2026-04-28T06:56:21.614707" level="INFO">Current page contains list 'id:dropdown'.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>Option 1</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2026-04-28T06:56:20.554765" elapsed="6.266484"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:26.823427" level="INFO">Selecting options from selection list 'id:dropdown' by value 2.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-04-28T06:56:26.822525" elapsed="4.213056"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:31.038823" level="INFO">Verifying list 'id:dropdown' has option [ Option 2 ] selected.</msg>
+<msg time="2026-04-28T06:56:32.083530" level="INFO">Current page contains list 'id:dropdown'.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>Option 2</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2026-04-28T06:56:31.037241" elapsed="6.342139"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:37.382626" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 1.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>Option 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-04-28T06:56:37.381041" elapsed="5.898291"/>
+</kw>
+<kw name="List Selection Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:43.283220" level="INFO">Verifying list 'id:dropdown' has option [ Option 1 ] selected.</msg>
+<msg time="2026-04-28T06:56:44.331172" level="INFO">Current page contains list 'id:dropdown'.</msg>
+<arg>${DROPDOWN}</arg>
+<arg>Option 1</arg>
+<doc>Verifies selection list ``locator`` has ``expected`` options selected.</doc>
+<status status="PASS" start="2026-04-28T06:56:43.281369" elapsed="6.311580"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:56:49.596295" elapsed="2.863088"/>
+</kw>
+<doc>Test selecting dropdown options by Index, Value, and Label.</doc>
+<status status="PASS" start="2026-04-28T06:56:08.983993" elapsed="43.476731"/>
+</test>
+<status status="PASS" start="2026-04-28T06:56:08.974048" elapsed="43.491074"/>
+</suite>
+<suite id="s1-s1-s4" name="Assignment3Handledropdownandframes" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment3Handledropdownandframes.robot">
+<test id="s1-s1-s4-t1" name="Execute Selenium Advanced Elements" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:52.475518" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL_GOOGLE}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:56:52.475160" elapsed="5.992094"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:56:58.486718" elapsed="0.594798"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:56:59.087160" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-28T06:56:59.083725" elapsed="0.563678"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:00.171917" level="INFO">${link_count} = 25</msg>
+<var>${link_count}</var>
+<arg>xpath://a</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:56:59.647956" elapsed="0.524247"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Total links found: ${link_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:57:00.173854" elapsed="0.002718"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:01.422254" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T06:57:01.423880" level="FAIL">Element with locator 'xpath://div[@class='Kz9H9e']//div[1]' not found.</msg>
+<var>${btn_text}</var>
+<arg>xpath://div[@class='Kz9H9e']//div[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-28T06:57:00.178279" elapsed="1.902894">Element with locator 'xpath://div[@class='Kz9H9e']//div[1]' not found.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Button text is: ${btn_text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.082203" elapsed="0.000189"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:q</arg>
+<arg>Robot Framework</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.083186" elapsed="0.000217"/>
+</kw>
+<kw name="Get Value" owner="SeleniumLibrary">
+<var>${search_val}</var>
+<arg>name:q</arg>
+<doc>Returns the value attribute of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.084181" elapsed="0.000169"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Input value is: ${search_val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.085870" elapsed="0.000132"/>
+</kw>
+<kw name="Get Element Attribute" owner="SeleniumLibrary">
+<var>${attr}</var>
+<arg>name:q</arg>
+<arg>type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.086729" elapsed="0.000150"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Attribute type is: ${attr}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.088103" elapsed="0.000166"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Images</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:02.089710" elapsed="0.000159"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:57:02.091146" elapsed="2.893021"/>
+</kw>
+<doc>Testing Text, Values, Attributes, and JS Execution</doc>
+<status status="FAIL" start="2026-04-28T06:56:52.474021" elapsed="12.511501">Element with locator 'xpath://div[@class='Kz9H9e']//div[1]' not found.</status>
+</test>
+<test id="s1-s1-s4-t2" name="Handle Dropdowns" line="43">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:04.989873" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/dropdown'.</msg>
+<arg>${URL_DROPDOWN}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:57:04.989397" elapsed="6.041013"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:11.033543" level="INFO">Selecting options from selection list 'id:dropdown' by index 1.</msg>
+<arg>id:dropdown</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2026-04-28T06:57:11.032139" elapsed="5.431266"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:16.466439" level="INFO">Selecting options from selection list 'id:dropdown' by value 2.</msg>
+<arg>id:dropdown</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-04-28T06:57:16.465096" elapsed="4.236122"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:20.702695" level="INFO">Selecting options from selection list 'id:dropdown' by label Option 1.</msg>
+<arg>id:dropdown</arg>
+<arg>Option 1</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-04-28T06:57:20.702183" elapsed="5.765487"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:57:26.469940" elapsed="2.737745"/>
+</kw>
+<doc>Testing Index, Value, and Label selections</doc>
+<status status="PASS" start="2026-04-28T06:57:04.988323" elapsed="24.220659"/>
+</test>
+<test id="s1-s1-s4-t3" name="Handle Frames and Windows" line="58">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:29.219400" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/frames'.</msg>
+<arg>${URL_FRAMES}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:57:29.216653" elapsed="13.690655"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:42.910294" level="INFO">Clicking link 'iFrame'.</msg>
+<arg>iFrame</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:57:42.909013" elapsed="4.626889"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:47.543887" level="INFO">Selecting frame 'id:mce_0_ifr'.</msg>
+<arg>id:mce_0_ifr</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2026-04-28T06:57:47.541999" elapsed="1.156294"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:48.699370" level="INFO">Typing text 'Hello from inside the frame!' into text field 'id:tinymce'.</msg>
+<msg time="2026-04-28T06:57:49.958006" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T06:57:49.959309" level="FAIL">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=147.0.7727.102)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff65ee4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff65ee4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff65ebbd4d6]
+	chromedriver!(No symbol) [0x7ff65ec0d6a2]
+	chromedriver!(No symbol) [0x7ff65ec4002a]
+	chromedriver!(No symbol) [0x7ff65ec0aa46]
+	chromedriver!(No symbol) [0x7ff65ec6483b]
+	chromedriver!(No symbol) [0x7ff65ec090e8]
+	chromedriver!(No symbol) [0x7ff65ec09fc3]
+	chromedriver!GetHandleVerifier [0x7ff65f160149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff65f15a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff65f17c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff65ee67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff65ee7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff65ee540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff65ee54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff65ee38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ff851c77034+14]
+	ntdll!RtlUserThreadStart [0x7ff852c3cec1+21]
+</msg>
+<arg>id:tinymce</arg>
+<arg>Hello from inside the frame!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-28T06:57:48.698891" elapsed="1.957264">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=147.0.7727.102)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff65ee4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff65ee4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff65ebbd4d6]
+	chromedriver!(No symbol) [0x7ff65ec0d6a2]
+	chromedriver!(No symbol) [0x7ff65ec4002a]
+	chromedriver!(No symbol) [0x7ff65ec0aa46]
+	chromedriver!(No symbol) [0x7ff65ec6483b]
+	chromedriver!(No symbol) [0x7ff65ec090e8]
+	chromedriver!(No symbol) [0x7ff65ec09fc3]
+	chromedriver!GetHandleVerifier [0x7ff65f160149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff65f15a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff65f17c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff65ee67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff65ee7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff65ee540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff65ee54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff65ee38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ff851c77034+14]
+	ntdll!RtlUserThreadStart [0x7ff852c3cec1+21]
+</status>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.657012" elapsed="0.000128"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.open('https://www.bing.com')</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.657705" elapsed="0.000100"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>title:Bing</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.658485" elapsed="0.000112"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Switched to Bing</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.659492" elapsed="0.000168"/>
+</kw>
+<kw name="qac # 4. Close Window (Closes current active window)">
+<status status="NOT RUN" start="2026-04-28T06:57:50.662805" elapsed="0.000279"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.665335" elapsed="0.000106"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:57:50.671395" elapsed="0.000205"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:57:50.672810" elapsed="2.923189"/>
+</kw>
+<doc>Testing Select/Unselect Frame and Window switching</doc>
+<status status="FAIL" start="2026-04-28T06:57:29.212570" elapsed="24.384725">InvalidElementStateException: Message: invalid element state
+  (Session info: chrome=147.0.7727.102)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff65ee4a8e5+14e45]
+	chromedriver!GetHandleVerifier [0x7ff65ee4a950+14eb0]
+	chromedriver!(No symbol) [0x7ff65ebbd4d6]
+	chromedriver!(No symbol) [0x7ff65ec0d6a2]
+	chromedriver!(No symbol) [0x7ff65ec4002a]
+	chromedriver!(No symbol) [0x7ff65ec0aa46]
+	chromedriver!(No symbol) [0x7ff65ec6483b]
+	chromedriver!(No symbol) [0x7ff65ec090e8]
+	chromedriver!(No symbol) [0x7ff65ec09fc3]
+	chromedriver!GetHandleVerifier [0x7ff65f160149+32a6a9]
+	chromedriver!GetHandleVerifier [0x7ff65f15a715+324c75]
+	chromedriver!GetHandleVerifier [0x7ff65f17c012+346572]
+	chromedriver!GetHandleVerifier [0x7ff65ee67cb5+32215]
+	chromedriver!GetHandleVerifier [0x7ff65ee7087c+3addc]
+	chromedriver!GetHandleVerifier [0x7ff65ee540e4+1e644]
+	chromedriver!GetHandleVerifier [0x7ff65ee54296+1e7f6]
+	chromedriver!GetHandleVerifier [0x7ff65ee38737+2c97]
+	KERNEL32!BaseThreadInitThunk [0x7ff851c77034+14]
+	ntdll!RtlUserThreadStart [0x7ff852c3cec1+21]
+</status>
+</test>
+<status status="FAIL" start="2026-04-28T06:56:52.467872" elapsed="61.137487"/>
+</suite>
+<suite id="s1-s1-s5" name="Assignment4allkeywords" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment4allkeywords.robot">
+<test id="s1-s1-s5-t1" name="Master Selenium Keyword Demo" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:57:53.666466" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/checkboxes'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:57:53.664527" elapsed="5.924931"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:57:59.591539" elapsed="0.650030"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2026-04-28T06:58:00.243219" elapsed="0.001682"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:00.247742" level="INFO">Selecting checkbox 'xpath=(//input[@type='checkbox'])[1]'.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:00.246482" elapsed="1.387602"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:01.636064" level="INFO">Verifying checkbox 'xpath=(//input[@type='checkbox'])[1]' is selected.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="PASS" start="2026-04-28T06:58:01.635294" elapsed="0.899546"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:02.537715" level="INFO">Unselecting checkbox 'xpath=(//input[@type='checkbox'])[1]'.</msg>
+<arg>xpath=(//input[@type='checkbox'])[1]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:02.536420" elapsed="1.236193"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:03.775396" level="INFO">Opening url 'https://the-internet.herokuapp.com/login'</msg>
+<arg>${LOGIN_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:58:03.774210" elapsed="1.507838"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:05.287773" level="INFO">Typing text 'tomsmith' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:05.284857" elapsed="1.013533"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:06.304817" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-04-28T06:58:06.861833" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:06.302335" elapsed="0.923899"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:07.704889" level="INFO">Element 'css:button[type="submit"]' is displayed.</msg>
+<arg>css:button[type="submit"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-28T06:58:07.228005" elapsed="0.477132"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:07.706288" level="INFO">Verifying element 'tag:h2' contains exact text 'Login Page'.</msg>
+<arg>tag:h2</arg>
+<arg>Login Page</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-04-28T06:58:07.705775" elapsed="0.443742"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:08.583659" level="INFO">Current page contains text 'This is where you can log into the secure area'.</msg>
+<arg>This is where you can log into the secure area</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-28T06:58:08.150417" elapsed="0.433489"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:08.588588" level="INFO">Clicking button 'class:radius'.</msg>
+<arg>class:radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:08.588016" elapsed="1.937273"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-28T06:58:10.526358" elapsed="0.228827"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:10.757072" level="INFO">Simulating Mouse Over on element 'id=page-footer'.</msg>
+<arg>id=page-footer</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:10.756269" elapsed="0.695891"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:11.453904" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-28T06:58:11.452868" elapsed="0.210825"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T06:58:11.664934" level="INFO">Test reached final validation stage.</msg>
+<arg>Test reached final validation stage.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T06:58:11.664271" elapsed="0.000839"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Capturing final screenshot...</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:11.665997" elapsed="0.000912"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:12.001629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="master_test_result.png"&gt;&lt;img src="master_test_result.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>master_test_result.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-04-28T06:58:11.667558" elapsed="0.334871"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-28T06:58:12.003327" elapsed="2.745414"/>
+</kw>
+<doc>Covers Navigation, Forms, Assertions, and Browser Control.</doc>
+<status status="PASS" start="2026-04-28T06:57:53.654871" elapsed="21.095148"/>
+</test>
+<doc>A master suite covering major SeleniumLibrary keyword categories.</doc>
+<status status="PASS" start="2026-04-28T06:57:53.622177" elapsed="21.132317"/>
+</suite>
+<suite id="s1-s1-s6" name="Assignment4createdirectoryandcopyfiles" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment4createdirectoryandcopyfiles.robot">
+<test id="s1-s1-s6-t1" name="File System and Selenium Operations" line="14">
+<kw name="Create Directory" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.804090" level="INFO" html="true">Created directory '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup&lt;/a&gt;'.</msg>
+<arg>${SUB_DIR}</arg>
+<doc>Creates the specified directory.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.802310" elapsed="0.001999"/>
+</kw>
+<kw name="Directory Should Exist" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.805660" level="INFO" html="true">Directory '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup&lt;/a&gt;' exists.</msg>
+<arg>${SUB_DIR}</arg>
+<doc>Fails unless the given path points to an existing directory.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.805024" elapsed="0.000791"/>
+</kw>
+<kw name="Create File" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.808481" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt&lt;/a&gt;'.</msg>
+<arg>${SOURCE_FILE}</arg>
+<arg>This is the content of the source file.</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.806433" elapsed="0.002349"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.810336" level="INFO" html="true">File '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt&lt;/a&gt;' exists.</msg>
+<arg>${SOURCE_FILE}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.809582" elapsed="0.000941"/>
+</kw>
+<kw name="Copy File" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.821992" level="INFO" html="true">Copied file from '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\sample.txt&lt;/a&gt;' to '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup\copied_sample.txt"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup\copied_sample.txt&lt;/a&gt;'.</msg>
+<arg>${SOURCE_FILE}</arg>
+<arg>${DESTINATION}</arg>
+<doc>Copies the source file into the destination.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.811185" elapsed="0.011146"/>
+</kw>
+<kw name="File Should Exist" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:14.828358" level="INFO" html="true">File '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup\copied_sample.txt"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup\copied_sample.txt&lt;/a&gt;' exists.</msg>
+<arg>${DESTINATION}</arg>
+<doc>Fails unless the given ``path`` points to an existing file.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.827275" elapsed="0.001344"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nDirectory and Copy operations successful!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.829560" elapsed="0.002873"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:14.835291" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/upload'.</msg>
+<arg>https://the-internet.herokuapp.com/upload</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.834346" elapsed="7.967303"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:22.805311" level="INFO">Sending C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder\Backup\copied_sample.txt to browser.</msg>
+<arg>id:file-upload</arg>
+<arg>${DESTINATION}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:22.803648" elapsed="0.652571"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:23.460369" level="INFO">Clicking button 'id:file-submit'.</msg>
+<arg>id:file-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:23.459019" elapsed="1.394113"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:25.338183" level="INFO">Current page contains text 'File Uploaded!'.</msg>
+<arg>File Uploaded!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-28T06:58:24.854933" elapsed="0.483851"/>
+</kw>
+<kw name="Clean Up And Close" type="TEARDOWN">
+<kw name="Remove Directory" owner="OperatingSystem">
+<msg time="2026-04-28T06:58:25.350307" level="INFO" html="true">Removed directory '&lt;a href="file://C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder"&gt;C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Test_Folder&lt;/a&gt;'.</msg>
+<arg>${BASE_DIR}</arg>
+<arg>recursive=True</arg>
+<doc>Removes the directory pointed to by the given ``path``.</doc>
+<status status="PASS" start="2026-04-28T06:58:25.343544" elapsed="0.007518"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:58:25.352594" elapsed="2.795326"/>
+</kw>
+<status status="PASS" start="2026-04-28T06:58:25.341707" elapsed="2.807001"/>
+</kw>
+<doc>Test case to create directories, write files, and copy them.</doc>
+<status status="PASS" start="2026-04-28T06:58:14.800914" elapsed="13.348847"/>
+</test>
+<status status="PASS" start="2026-04-28T06:58:14.757347" elapsed="13.396569"/>
+</suite>
+<suite id="s1-s1-s7" name="Assignment4HandleFailure" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment4HandleFailure.robot">
+<test id="s1-s1-s7-t1" name="Handle Expected Failure Example" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:28.185839" level="INFO">Opening browser 'Chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:58:28.182475" elapsed="5.462316"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:58:33.647808" elapsed="0.329266"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:33.982790" level="INFO">Clicking element 'id:this-element-does-not-exist'.</msg>
+<msg time="2026-04-28T06:58:34.676042" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-28T06:58:34.677077" level="FAIL">Element with locator 'id:this-element-does-not-exist' not found.</msg>
+<arg>${NON_EXISTENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-04-28T06:58:33.981520" elapsed="0.703136">Element with locator 'id:this-element-does-not-exist' not found.</status>
+</kw>
+<msg time="2026-04-28T06:58:34.685732" level="INFO">${status} = FAIL</msg>
+<msg time="2026-04-28T06:58:34.686112" level="INFO">${message} = Element with locator 'id:this-element-does-not-exist' not found.</msg>
+<var>${status}</var>
+<var>${message}</var>
+<arg>Click Element</arg>
+<arg>${NON_EXISTENT}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2026-04-28T06:58:33.978879" elapsed="0.707439"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\nExecution Status: ${status}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:34.687899" elapsed="0.002729"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Error Message Received: ${message}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:34.692497" elapsed="0.004500"/>
+</kw>
+<if>
+<branch type="IF" condition="'${status}' == 'FAIL'">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>The element wasn't found, but I'm still running!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:34.701562" elapsed="0.003197"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:34.708184" level="INFO">Clicking element 'link:Checkboxes'.</msg>
+<arg>${EXISTING}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-28T06:58:34.706949" elapsed="1.110913"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Successfully clicked the fallback element.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:35.820854" elapsed="0.003695"/>
+</kw>
+<status status="PASS" start="2026-04-28T06:58:34.699321" elapsed="1.126001"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>The element was actually found!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2026-04-28T06:58:35.826737" elapsed="0.000250"/>
+</kw>
+<status status="NOT RUN" start="2026-04-28T06:58:35.825929" elapsed="0.009303"/>
+</branch>
+<status status="PASS" start="2026-04-28T06:58:34.698965" elapsed="1.137030"/>
+</if>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:36.319549" level="INFO">Current page contains text 'Checkboxes'.</msg>
+<arg>Checkboxes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-28T06:58:35.838366" elapsed="0.481744"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:58:36.322289" elapsed="2.823289"/>
+</kw>
+<doc>Demonstrates how to ignore an error and take action based on the result.</doc>
+<status status="PASS" start="2026-04-28T06:58:28.177799" elapsed="10.969071"/>
+</test>
+<status status="PASS" start="2026-04-28T06:58:28.159247" elapsed="10.991951"/>
+</suite>
+<suite id="s1-s1-s8" name="Assignment4loop" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment4loop.robot">
+<test id="s1-s1-s8-t1" name="Demonstrate Loop And Selenium" line="9">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n--- Printing 1 to 5 ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.186241" elapsed="0.014408"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.208458" elapsed="0.004129"/>
+</kw>
+<var name="${index}">1</var>
+<status status="PASS" start="2026-04-28T06:58:39.207278" elapsed="0.006056"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.215939" elapsed="0.002838"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2026-04-28T06:58:39.214526" elapsed="0.004984"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.221381" elapsed="0.002732"/>
+</kw>
+<var name="${index}">3</var>
+<status status="PASS" start="2026-04-28T06:58:39.220656" elapsed="0.004140"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.230561" elapsed="0.008484"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2026-04-28T06:58:39.226987" elapsed="0.012831"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Current Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.242351" elapsed="0.004686"/>
+</kw>
+<var name="${index}">5</var>
+<status status="PASS" start="2026-04-28T06:58:39.241125" elapsed="0.006858"/>
+</iter>
+<var>${index}</var>
+<value>1</value>
+<value>6</value>
+<status status="PASS" start="2026-04-28T06:58:39.204828" elapsed="0.044603"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n--- Printing Even Numbers to 10 ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.251687" elapsed="0.003479"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Even Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.261020" elapsed="0.008032"/>
+</kw>
+<var name="${index}">2</var>
+<status status="PASS" start="2026-04-28T06:58:39.259273" elapsed="0.010339"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Even Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.270947" elapsed="0.001243"/>
+</kw>
+<var name="${index}">4</var>
+<status status="PASS" start="2026-04-28T06:58:39.270624" elapsed="0.001955"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Even Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.273858" elapsed="0.001286"/>
+</kw>
+<var name="${index}">6</var>
+<status status="PASS" start="2026-04-28T06:58:39.273505" elapsed="0.001971"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Even Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.276820" elapsed="0.002470"/>
+</kw>
+<var name="${index}">8</var>
+<status status="PASS" start="2026-04-28T06:58:39.276299" elapsed="0.003880"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Even Number: ${index}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.280932" elapsed="0.002020"/>
+</kw>
+<var name="${index}">10</var>
+<status status="PASS" start="2026-04-28T06:58:39.280635" elapsed="0.002733"/>
+</iter>
+<var>${index}</var>
+<value>2</value>
+<value>11</value>
+<value>2</value>
+<status status="PASS" start="2026-04-28T06:58:39.257460" elapsed="0.026154"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n--- Printing From a List ---</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.284343" elapsed="0.000877"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-04-28T06:58:39.286552" level="INFO">@{numbers} = [ 10 | 20 | 30 ]</msg>
+<var>@{numbers}</var>
+<arg>10</arg>
+<arg>20</arg>
+<arg>30</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.285873" elapsed="0.000764"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>List Value: ${val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.287652" elapsed="0.000876"/>
+</kw>
+<var name="${val}">10</var>
+<status status="PASS" start="2026-04-28T06:58:39.287468" elapsed="0.001229"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>List Value: ${val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.289381" elapsed="0.001092"/>
+</kw>
+<var name="${val}">20</var>
+<status status="PASS" start="2026-04-28T06:58:39.288950" elapsed="0.001704"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>List Value: ${val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.291114" elapsed="0.000762"/>
+</kw>
+<var name="${val}">30</var>
+<status status="PASS" start="2026-04-28T06:58:39.290926" elapsed="0.001096"/>
+</iter>
+<var>${val}</var>
+<value>@{numbers}</value>
+<status status="PASS" start="2026-04-28T06:58:39.287101" elapsed="0.005145"/>
+</for>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:39.293364" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.292767" elapsed="1.476171"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:41.588659" level="INFO">Page title is 'Google'.</msg>
+<arg>Google</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-04-28T06:58:40.770385" elapsed="0.818536"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:58:41.591424" elapsed="2.510505"/>
+</kw>
+<doc>A script to show loops and basic Selenium initialization.</doc>
+<status status="PASS" start="2026-04-28T06:58:39.182525" elapsed="4.920440"/>
+</test>
+<status status="PASS" start="2026-04-28T06:58:39.157599" elapsed="4.948837"/>
+</suite>
+<suite id="s1-s1-s9" name="Assignment5" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot">
+<test id="s1-s1-s9-t1" name="Login And Validate Dashboard" line="14">
+<status status="FAIL" start="2026-04-28T06:58:44.113743" elapsed="0.001157">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t2" name="[Tags] smoke regression" line="15">
+<status status="FAIL" start="2026-04-28T06:58:44.115863" elapsed="0.001012">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t3" name="Login To Application" line="16">
+<status status="FAIL" start="2026-04-28T06:58:44.123474" elapsed="0.000887">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t4" name="Validate Login Success" line="17">
+<status status="FAIL" start="2026-04-28T06:58:44.125687" elapsed="0.002139">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t5" name="Navigation To Profile Page" line="19">
+<status status="FAIL" start="2026-04-28T06:58:44.129730" elapsed="0.001139">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t6" name="[Tags] regression" line="20">
+<status status="FAIL" start="2026-04-28T06:58:44.131920" elapsed="0.000750">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t7" name="Login To Application" line="21">
+<status status="FAIL" start="2026-04-28T06:58:44.133888" elapsed="0.001158">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t8" name="Validate Login Success" line="22">
+<status status="FAIL" start="2026-04-28T06:58:44.136133" elapsed="0.005578">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t9" name="Navigate To Section" line="23">
+<status status="FAIL" start="2026-04-28T06:58:44.144498" elapsed="0.000754">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t10" name="Validate Navigation" line="24">
+<status status="FAIL" start="2026-04-28T06:58:44.146716" elapsed="0.000915">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t11" name="Invalid Login Validation" line="26">
+<status status="FAIL" start="2026-04-28T06:58:44.148757" elapsed="0.002822">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t12" name="[Tags] negative" line="27">
+<status status="FAIL" start="2026-04-28T06:58:44.152474" elapsed="0.000781">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t13" name="Input Text ${USER_FIELD} wrong" line="28">
+<status status="FAIL" start="2026-04-28T06:58:44.155514" elapsed="0.001080">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t14" name="Input Text ${PASS_FIELD} wrong" line="29">
+<status status="FAIL" start="2026-04-28T06:58:44.158918" elapsed="0.001257">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t15" name="Click Button ${LOGIN_BTN}" line="30">
+<status status="FAIL" start="2026-04-28T06:58:44.163643" elapsed="0.003380">Test cannot be empty.</status>
+</test>
+<test id="s1-s1-s9-t16" name="Run Keyword And Expect Error * Element Should Be Visible ${DASHBOARD}" line="31">
+<status status="FAIL" start="2026-04-28T06:58:44.169006" elapsed="0.000825">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2026-04-28T06:58:44.109006" elapsed="0.062049"/>
+</suite>
+<suite id="s1-s1-s10" name="Demo" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Demo.robot">
+<kw name="Open Application" type="SETUP">
+<msg time="2026-04-28T06:58:44.189495" level="FAIL">No keyword with name 'Open Application' found.</msg>
+<status status="FAIL" start="2026-04-28T06:58:44.189408" elapsed="0.000164">No keyword with name 'Open Application' found.</status>
+</kw>
+<test id="s1-s1-s10-t1" name="Valid Login Test" line="17">
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2026-04-28T06:58:44.189713" elapsed="0.000819">Parent suite setup failed:
+No keyword with name 'Open Application' found.</status>
+</test>
+<test id="s1-s1-s10-t2" name="Navigation Test" line="22">
+<tag>navigation</tag>
+<tag>regression</tag>
+<status status="FAIL" start="2026-04-28T06:58:44.192350" elapsed="0.002033">Parent suite setup failed:
+No keyword with name 'Open Application' found.</status>
+</test>
+<test id="s1-s1-s10-t3" name="Logout Test" line="28">
+<tag>logout</tag>
+<tag>regression</tag>
+<status status="FAIL" start="2026-04-28T06:58:44.195422" elapsed="0.000848">Parent suite setup failed:
+No keyword with name 'Open Application' found.</status>
+</test>
+<test id="s1-s1-s10-t4" name="Python Integration Test" line="34">
+<tag>python</tag>
+<tag>regression</tag>
+<status status="FAIL" start="2026-04-28T06:58:44.197659" elapsed="0.000870">Parent suite setup failed:
+No keyword with name 'Open Application' found.</status>
+</test>
+<kw name="Close Application" type="TEARDOWN">
+<msg time="2026-04-28T06:58:44.207810" level="FAIL">No keyword with name 'Close Application' found.</msg>
+<status status="FAIL" start="2026-04-28T06:58:44.207721" elapsed="0.000157">No keyword with name 'Close Application' found.</status>
+</kw>
+<status status="FAIL" start="2026-04-28T06:58:44.172691" elapsed="0.035320">Suite setup failed:
+No keyword with name 'Open Application' found.
+
+Also suite teardown failed:
+No keyword with name 'Close Application' found.</status>
+</suite>
+<suite id="s1-s1-s11" name="MaximizeWindowAssignment1" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\MaximizeWindowAssignment1.robot">
+<test id="s1-s1-s11-t1" name="Browser And Logging Demo" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:44.219706" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-28T06:58:44.219320" elapsed="2.561323"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-28T06:58:46.781403" elapsed="0.304099"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T06:58:47.086962" level="INFO">This message will appear in the HTML log file.</msg>
+<arg>This message will appear in the HTML log file.</arg>
+<arg>level=INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T06:58:47.086134" elapsed="0.000967"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>This message is visible in the terminal during execution.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-04-28T06:58:47.087732" elapsed="0.000799"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:47.373212" level="INFO">Current page contains element 'name=q'.</msg>
+<arg>name=q</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2026-04-28T06:58:47.089181" elapsed="0.284756"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-28T06:58:47.387319" level="INFO">Verified search bar is present.</msg>
+<arg>Verified search bar is present.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-28T06:58:47.380260" elapsed="0.010398"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:58:47.403972" elapsed="2.840699"/>
+</kw>
+<status status="PASS" start="2026-04-28T06:58:44.214736" elapsed="6.031359"/>
+</test>
+<status status="PASS" start="2026-04-28T06:58:44.211205" elapsed="6.037116"/>
+</suite>
+<suite id="s1-s1-s12" name="TestSuit" source="C:\Users\HP\Documents\RobotFramework\tests\TestSuit\TestSuit.robot">
+<test id="s1-s1-s12-t1" name="Login With External Data" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-28T06:58:50.257071" level="FAIL">Variable '${URL}' not found.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-04-28T06:58:50.255961" elapsed="0.001209">Variable '${URL}' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${VALID_USER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:58:50.257711" elapsed="0.000102"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${VALID_PASS}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:58:50.258420" elapsed="0.000185"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:58:50.259139" elapsed="0.000101"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-28T06:58:50.259749" elapsed="0.000093"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-28T06:58:50.260615" elapsed="0.000213"/>
+</kw>
+<status status="FAIL" start="2026-04-28T06:58:50.254834" elapsed="0.006262">Variable '${URL}' not found.</status>
+</test>
+<status status="FAIL" start="2026-04-28T06:58:50.249618" elapsed="0.012493"/>
+</suite>
+<status status="FAIL" start="2026-04-28T06:55:54.373532" elapsed="175.897586"/>
+</suite>
+<status status="FAIL" start="2026-04-28T06:55:54.299468" elapsed="175.974454"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="32" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">login</stat>
+<stat pass="0" fail="1" skip="0">logout</stat>
+<stat pass="0" fail="1" skip="0">navigation</stat>
+<stat pass="0" fail="1" skip="0">python</stat>
+<stat pass="0" fail="3" skip="0">regression</stat>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="7" fail="32" skip="0">Tests</stat>
+<stat name="TestSuit" id="s1-s1" pass="7" fail="32" skip="0">Tests.TestSuit</stat>
+<stat name="Assignment1" id="s1-s1-s1" pass="0" fail="1" skip="0">Tests.TestSuit.Assignment1</stat>
+<stat name="Assignment2" id="s1-s1-s2" pass="0" fail="8" skip="0">Tests.TestSuit.Assignment2</stat>
+<stat name="Assignment3" id="s1-s1-s3" pass="1" fail="0" skip="0">Tests.TestSuit.Assignment3</stat>
+<stat name="Assignment3Handledropdownandframes" id="s1-s1-s4" pass="1" fail="2" skip="0">Tests.TestSuit.Assignment3Handledropdownandframes</stat>
+<stat name="Assignment4allkeywords" id="s1-s1-s5" pass="1" fail="0" skip="0">Tests.TestSuit.Assignment4allkeywords</stat>
+<stat name="Assignment4createdirectoryandcopyfiles" id="s1-s1-s6" pass="1" fail="0" skip="0">Tests.TestSuit.Assignment4createdirectoryandcopyfiles</stat>
+<stat name="Assignment4HandleFailure" id="s1-s1-s7" pass="1" fail="0" skip="0">Tests.TestSuit.Assignment4HandleFailure</stat>
+<stat name="Assignment4loop" id="s1-s1-s8" pass="1" fail="0" skip="0">Tests.TestSuit.Assignment4loop</stat>
+<stat name="Assignment5" id="s1-s1-s9" pass="0" fail="16" skip="0">Tests.TestSuit.Assignment5</stat>
+<stat name="Demo" id="s1-s1-s10" pass="0" fail="4" skip="0">Tests.TestSuit.Demo</stat>
+<stat name="MaximizeWindowAssignment1" id="s1-s1-s11" pass="1" fail="0" skip="0">Tests.TestSuit.MaximizeWindowAssignment1</stat>
+<stat name="TestSuit" id="s1-s1-s12" pass="0" fail="1" skip="0">Tests.TestSuit.TestSuit</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-04-28T06:55:54.237341" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment2.robot' on line 4: Non-existing setting 'Resource ../resources/keywords.robot'.</msg>
+<msg time="2026-04-28T06:55:54.237673" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment2.robot' on line 5: Non-existing setting 'Resource ../resources/variables.robot'.</msg>
+<msg time="2026-04-28T06:55:54.237960" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment2.robot' on line 7: Non-existing setting 'Suite Setup Open Application'.</msg>
+<msg time="2026-04-28T06:55:54.238146" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment2.robot' on line 8: Non-existing setting 'Suite Teardown Close Application'.</msg>
+<msg time="2026-04-28T06:55:54.273020" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 4: Non-existing setting 'Resource ../resources/keywords.robot'.</msg>
+<msg time="2026-04-28T06:55:54.273305" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 5: Non-existing setting 'Resource ../resources/variables.robot'.</msg>
+<msg time="2026-04-28T06:55:54.273506" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 7: Non-existing setting 'Suite Setup Open Application'.</msg>
+<msg time="2026-04-28T06:55:54.273697" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 8: Non-existing setting 'Suite Teardown Close Application'.</msg>
+<msg time="2026-04-28T06:55:54.273916" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 9: Non-existing setting 'Test Setup Log To Console Starting Test'.</msg>
+<msg time="2026-04-28T06:55:54.274173" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Assignment5.robot' on line 10: Non-existing setting 'Test Teardown Capture Evidence'.</msg>
+<msg time="2026-04-28T06:56:08.942739" level="WARN">Multiple tests with name 'Validate Login Page Elements' executed in suite 'Tests.TestSuit.Assignment2'.</msg>
+<msg time="2026-04-28T06:58:44.133958" level="WARN">Multiple tests with name 'Login To Application' executed in suite 'Tests.TestSuit.Assignment5'.</msg>
+<msg time="2026-04-28T06:58:44.136221" level="WARN">Multiple tests with name 'Validate Login Success' executed in suite 'Tests.TestSuit.Assignment5'.</msg>
+<msg time="2026-04-28T06:58:44.180364" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Demo.robot' on line 4: Importing library 'C:\Users\HP\Documents\RobotFramework\libraries\utils.py' failed: ModuleNotFoundError: No module named 'utils'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP\Documents\RobotFramework\libraries
+  C:\Users\HP\Documents\RobotFramework\rf_env\Scripts\robot.exe
+  C:\Users\HP\AppData\Local\Python\pythoncore-3.14-64\python314.zip
+  C:\Users\HP\AppData\Local\Python\pythoncore-3.14-64\DLLs
+  C:\Users\HP\AppData\Local\Python\pythoncore-3.14-64\Lib
+  C:\Users\HP\AppData\Local\Python\pythoncore-3.14-64
+  C:\Users\HP\Documents\RobotFramework\rf_env
+  C:\Users\HP\Documents\RobotFramework\rf_env\Lib\site-packages</msg>
+<msg time="2026-04-28T06:58:44.184103" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\Demo.robot' on line 5: Resource file '..\resources\keywords.robot' does not exist.</msg>
+<msg time="2026-04-28T06:58:50.253215" level="ERROR">Error in file 'C:\Users\HP\Documents\RobotFramework\tests\TestSuit\TestSuit.robot' on line 4: Variable file 'test_data.py' does not exist.</msg>
+</errors>
+</robot>

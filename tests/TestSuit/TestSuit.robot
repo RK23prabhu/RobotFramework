@@ -1,5 +1,6 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary 
+
 Variables    test_data.py    # Importing the python file
 
 *** Test Cases ***
